@@ -24,5 +24,15 @@ namespace Diccionario_DDi
         {
             InitializeComponent();
         }
+
+        private void Añadir(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Eliminar(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

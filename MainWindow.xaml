@@ -5,15 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diccionario_DDi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="500">
     <Grid Margin="0,0,25,13">
         <TabControl Margin="0,0,-24,-10">
             <TabItem Header="Inglés-Español">
-                <WrapPanel Margin="0,0,-25,-1">
-                    <!-- añadir elementos para pestaña-->
-                    <Label Content="Inglés" Width="75" Margin="20"/>
 
-                </WrapPanel>
 
             </TabItem>
             <TabItem Header="Español-Inglés">
@@ -23,7 +19,16 @@
 
             </TabItem>
             <TabItem Header="Listado ordenado">
+                <Grid>
+                    <ListBox x:Name="lista" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="26,25,32,214"/>
+                    <TextBox x:Name="textIngles" HorizontalAlignment="Left" Margin="25,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190" Height="32"/>
+                    <Label Content="Inglés" HorizontalAlignment="Left" Margin="25,145,0,0" VerticalAlignment="Top" FontSize="20"/>
+                    <TextBox x:Name="textEsp" HorizontalAlignment="Left" Margin="247,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="189" Height="32"/>
+                    <Label Content="Español" HorizontalAlignment="Left" Margin="247,145,0,0" VerticalAlignment="Top" FontSize="20"/>
+                    <Button Content="Añadir" HorizontalAlignment="Left" Margin="26,258,0,0" VerticalAlignment="Top" Click="Añadir" Width="134" Height="36" />
+                    <Button Content="Eliminar" HorizontalAlignment="Left" Margin="247,258,0,0" VerticalAlignment="Top" Click="Eliminar" Width="134" Height="36"/>
 
+                </Grid>
             </TabItem>
 
         </TabControl>
