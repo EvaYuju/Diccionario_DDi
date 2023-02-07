@@ -11,8 +11,12 @@
             <TabItem Header="Inglés-Español">
                 <Grid Background="#FFD2F2F9" >
                     <!-- añadir elementos para pestaña-->
-                    <Label Content="Inglés" Style="{StaticResource EstiloEtiquetas}" Width="75" Margin="63,41,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                    <TextBox Style="{StaticResource EstiloCamposTexto}" HorizontalAlignment="Left" Margin="63,114,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="187"/>
+                    <Label Content="Inglés" Style="{StaticResource EstiloEtiquetas}" Width="74" Margin="130,73,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBox Style="{StaticResource EstiloCamposTexto}" HorizontalAlignment="Left" Margin="130,118,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="187"/>
+                    <Label Content="Español" Style="{StaticResource EstiloEtiquetas}" Margin="130,157,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBox Style="{StaticResource EstiloCamposTexto}" HorizontalAlignment="Left" Margin="130,197,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="187"/>
+                    <Button Style="{StaticResource EstiloBotones}" Content="Traducir" HorizontalAlignment="Left" Margin="356,157,0,0" VerticalAlignment="Top" Width="87"/>
+
                 </Grid>
 
             </TabItem>
