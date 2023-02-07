@@ -27,12 +27,29 @@ namespace Diccionario_DDi
 
         private void Añadir(object sender, RoutedEventArgs e)
         {
+           
+            if (textIngles.Text.Length != 0 || textEsp.Text.Length != 0)
+            {
+                string ing = textIngles.Text.ToString();
+                string esp = textEsp.Text.ToString();
+                lista.Items.Add(ing + " = " + esp);
 
-        }
+                textIngles.Clear();
+                textEsp.Clear();
+
+            } else
+            {
+                MessageBox.Show("Debe rellenar todos los campos", "Añadir a lista ordenada");
+            }
+           
+            
+        } 
 
         private void Eliminar(object sender, RoutedEventArgs e)
         {
-
+            lista.Items.RemoveAt(lista.Items.IndexOf(lista.SelectedItem));
         }
+
+    
     }
 }
