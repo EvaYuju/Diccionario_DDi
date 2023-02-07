@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diccionario_DDi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="317" Width="389">
-    <Grid Margin="0,0,25,13">
+        Title="MainWindow" Height="363" Width="417">
+    <Grid Margin="0,0,28,24">
         <TabControl Margin="0,0,-24,-10">
             <TabItem Header="Inglés-Español">
                 <Grid>
                     <!-- añadir elementos para pestaña-->
-                    <Label x:Name="labelInglés"  Style="{StaticResource Etiquetas1}" Content="Inglés" Margin="56,24,0,0" Width="68" Height="30" VerticalAlignment="Top"/>
-                    <Label x:Name="labelTraduccion" Style="{StaticResource CuedroNegro}" Content="Traducción" Margin="56,135,0,0" VerticalAlignment="Top" Width="135" FontFamily="Segoe UI"/>
-                    <Button x:Name="btnTraducir" Style="{StaticResource ButtonStyle}" Content="Español" HorizontalAlignment="Left" Margin="222,135,0,0" VerticalAlignment="Top" Height="31" Width="93" Click="Button_Click"/>
-                    <TextBox x:Name="txtBoxEscribir" Style="{StaticResource Etiquetas2}" Margin="56,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="23" AutomationProperties.HelpText="Escriba una palabra en inglés"/>
-                 
+                    <Label x:Name="labelInglés"  Style="{StaticResource Etiquetas1}" Content="Inglés" Margin="39,21,0,0" Width="68" Height="33" VerticalAlignment="Top"/>
+                    <Label x:Name="labelTraduccion" Style="{StaticResource CuedroNegro}" Content="Traducción" Margin="39,99,0,0" VerticalAlignment="Top" Width="199" FontFamily="Segoe UI" Height="31"/>
+                    <Button x:Name="btnTraducir" Style="{StaticResource ButtonStyle}" Content="TRADUCIR" HorizontalAlignment="Left" Margin="269,50,0,0" VerticalAlignment="Top" Height="36" Width="114" Click="Button_Click"/>
+                    <TextBox x:Name="txtBoxEscribir" Style="{StaticResource Etiquetas2}" Margin="39,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="27"  GotFocus="TextBox_GotFocus" Text="Escriba una palabra en inglés"/>
+                    <Button x:Name="btnBorrar" Style="{StaticResource ButtonStyle}" Content="BORRAR" HorizontalAlignment="Left" Margin="269,107,0,0" VerticalAlignment="Top" Height="33" Width="114" Click="btnBorrar_Click"/>
+
                 </Grid>
 
-                </WrapPanel>
+
 
             </TabItem>
             <TabItem Header="Español-Inglés">

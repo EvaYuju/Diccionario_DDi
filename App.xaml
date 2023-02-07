@@ -4,6 +4,42 @@
              xmlns:local="clr-namespace:Diccionario_DDi"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="CuedroNegro" TargetType="{x:Type Label}">
+            <!-- CuedroNegro: para dar formato al campo negro que recibe -->
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Width" Value="108"/>
+            <Setter Property="Height" Value="31"/>
+            <Setter Property="Foreground" Value="WHITE"/>
+        </Style>
+        <Style x:Key="Etiquetas1" TargetType="{x:Type Label}">
+            <!-- Etiquetas1: para dar formato a los controles Label de etiquetas-->
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property= "FontFamily" Value="Segoe UI" />
+            <Setter Property="Foreground" Value="black"/>
+        </Style>
+        <Style x:Key="Etiquetas2" TargetType="{x:Type TextBox}">
+            <!-- Etiquetas2: para dar formato a los controles TexBox-->
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property= "FontFamily" Value="Segoe UI" />
+            <Setter Property="Foreground" Value="black"/>
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+            <!-- ButtonStyle: para dar formato a los botones-->
+
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Foreground" Value="black"/>
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+
     </Application.Resources>
 </Application>
