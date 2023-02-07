@@ -4,6 +4,20 @@
              xmlns:local="clr-namespace:Diccionario_DDi"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="EstiloEtiquetas" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="20px"/>
+            <Setter Property="Height" Value="40px"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+        </Style>
+        <Style x:Key="EstiloCamposTexto" TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="3,8,3,8"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontSize" Value="15px"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="Background" Value="Snow"/>
+        </Style>
     </Application.Resources>
 </Application>

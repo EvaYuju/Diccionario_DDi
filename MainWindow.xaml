@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Diccionario_DDi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="412" Width="534" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,25,13">
         <TabControl Margin="0,0,-24,-10">
             <TabItem Header="Inglés-Español">
-                <WrapPanel Margin="0,0,-25,-1">
+                <Grid Background="#FFD2F2F9" >
                     <!-- añadir elementos para pestaña-->
-                    <Label Content="Inglés" Width="75" Margin="20"/>
-
-                </WrapPanel>
+                    <Label Content="Inglés" Style="{StaticResource EstiloEtiquetas}" Width="75" Margin="63,41,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBox Style="{StaticResource EstiloCamposTexto}" HorizontalAlignment="Left" Margin="63,114,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="187"/>
+                </Grid>
 
             </TabItem>
             <TabItem Header="Español-Inglés">
