@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diccionario_DDi", "Diccionario_DDi.csproj", "{171C95E7-6AE9-473E-8A95-B3216ED31DA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{171C95E7-6AE9-473E-8A95-B3216ED31DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171C95E7-6AE9-473E-8A95-B3216ED31DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171C95E7-6AE9-473E-8A95-B3216ED31DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171C95E7-6AE9-473E-8A95-B3216ED31DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {025615D1-CFBB-488B-AFD6-B2CE6C4FCDCC}
+	EndGlobalSection
+EndGlobal

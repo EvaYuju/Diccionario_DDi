@@ -1,0 +1,32 @@
+﻿<Window x:Class="Diccionario_DDi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diccionario_DDi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,25,13">
+        <TabControl Margin="0,0,-24,-10">
+            <TabItem Header="Inglés-Español">
+                <WrapPanel Margin="0,0,-25,-1">
+                    <!-- añadir elementos para pestaña-->
+                    <Label Content="Inglés" Width="75" Margin="20"/>
+
+                </WrapPanel>
+
+            </TabItem>
+            <TabItem Header="Español-Inglés">
+
+            </TabItem>
+            <TabItem Header="Juego">
+
+            </TabItem>
+            <TabItem Header="Listado ordenado">
+
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>
