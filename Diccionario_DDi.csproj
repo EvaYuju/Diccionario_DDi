@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="flechas.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="flechas.png" />
+  </ItemGroup>
+
 </Project>
