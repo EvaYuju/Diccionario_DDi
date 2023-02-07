@@ -35,5 +35,8 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="EstiloListView" TargetType="{x:Type ListView}">
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
     </Application.Resources>
 </Application>
