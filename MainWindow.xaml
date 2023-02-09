@@ -12,7 +12,7 @@
                 <Grid Background="#FFD2F2F9" >
                     <!-- añadir elementos para pestaña-->
                     <Label Content="Inglés" Style="{StaticResource EstiloEtiquetas}" Width="74" Margin="142,80,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                    <TextBox Text="" Style="{StaticResource EstiloCamposTexto}" x:Name="txtIngles1" HorizontalAlignment="Left" Margin="142,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
+                    <TextBox Text="" Style="{StaticResource EstiloCamposTexto}" x:Name="txtIngles1" HorizontalAlignment="Left" Margin="142,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" TextChanged="txtIngles1_TextChanged"/>
                     <Label Content="Español" Style="{StaticResource EstiloEtiquetas}" Margin="142,165,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                     <TextBox Text="" Style="{StaticResource EstiloCamposTexto}" x:Name="txtEspanol1" HorizontalAlignment="Left" Margin="142,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
                     <Button Style="{StaticResource EstiloBotones}" x:Name="btnTraducir1" Content="Traducir" HorizontalAlignment="Left" Margin="347,166,0,0" VerticalAlignment="Top" Width="87" Click="traducirInglesEspanol"/>
@@ -26,7 +26,7 @@
                 <Grid Background="#FFD2F2F9" >
                     <!-- añadir elementos para pestaña-->
                     <Label Content="Español" Style="{StaticResource EstiloEtiquetas}" Width="87" Margin="142,80,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                    <TextBox Text="" Style="{StaticResource EstiloCamposTexto}" x:Name="txtEspanol2" HorizontalAlignment="Left" Margin="142,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
+                    <TextBox Text="" Style="{StaticResource EstiloCamposTexto}" x:Name="txtEspanol2" HorizontalAlignment="Left" Margin="142,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" TextChanged="txtEspanol2_TextChanged"/>
                     <Label Content="Inglés" Style="{StaticResource EstiloEtiquetas}" Margin="142,165,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                     <TextBox Text="" Style="{StaticResource EstiloCamposTexto}" x:Name="txtIngles2"  HorizontalAlignment="Left" Margin="142,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
                     <Button Style="{StaticResource EstiloBotones}" x:Name="btnTraducir2" Content="Traducir" HorizontalAlignment="Left" Margin="347,166,0,0" VerticalAlignment="Top" Width="87" Click="traducirEspanolIngles"/>
@@ -37,8 +37,20 @@
             </TabItem>
             <TabItem Header="Juego">
                 <Grid Background="#FFD2F2F9">
-                    <Button Style="{StaticResource EstiloBotones}" Content="Empezar" HorizontalAlignment="Left" Margin="146,90,0,0" VerticalAlignment="Top"/>
-
+                    <Button x:Name="btnEmpezarJuego" Style="{StaticResource EstiloBotones}" Content="Empezar" Margin="0,84,108,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="92" Click="empezarJuego"/>
+                    <Label Style="{StaticResource EstiloEtiquetas}" Content="Palabra a adivinar:" HorizontalAlignment="Left" Margin="39,64,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtAdivinarJuego" Style="{StaticResource EstiloCamposTexto}" HorizontalAlignment="Left" Margin="43,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192"/>
+                    <Rectangle x:Name="panelTaparPalabra" HorizontalAlignment="Left" Height="35" Margin="43,104,0,0" VerticalAlignment="Top" Width="192" Fill="#FF608DB1" Stroke="#FF425E78"/>
+                    <Label Style="{StaticResource EstiloEtiquetas}" Content="Respuesta:" HorizontalAlignment="Left" Margin="39,176,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtRespuestaJuego" Style="{StaticResource EstiloCamposTexto}" HorizontalAlignment="Left" Margin="43,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192"/>
+                    <Button x:Name="btnReiniciarJuego" Style="{StaticResource EstiloBotones}" Content="Reiniciar" Margin="0,128,119,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70" Click="reiniciarJuego"/>
+                    <Rectangle HorizontalAlignment="Right" Fill="#FF92C9DC" Height="118" Margin="0,174,63,0" VerticalAlignment="Top" Width="181"/>
+                    <Label Style="{StaticResource EstiloEtiquetas}" Content="Aciertos:" HorizontalAlignment="Right" Margin="0,193,138,0" VerticalAlignment="Top"/>
+                    <Label Style="{StaticResource EstiloEtiquetas}" Content="Fallos:" HorizontalAlignment="Right" Margin="0,235,138,0" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="txtnumAciertos" HorizontalAlignment="Right" Margin="0,199,102,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Foreground="#FF18A00C"/>
+                    <TextBlock x:Name="txtnumFallos" HorizontalAlignment="Right" Margin="0,241,102,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="18" Foreground="#FFD12727"/>
+                    <Button x:Name="btnSiguientePalabra" Style="{StaticResource EstiloBotones}" Content="➡️" HorizontalAlignment="Left" Margin="207,262,0,0" VerticalAlignment="Top" Width="28" Click="siguientePalabra"/>
+                    <Button x:Name="btnComprobarPalabra" Style="{StaticResource EstiloBotones}" Content="✅" HorizontalAlignment="Left" Margin="207,262,0,0" VerticalAlignment="Top" Width="28" Click="comprobarPalabra"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Listado ordenado">
