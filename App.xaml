@@ -15,7 +15,7 @@
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Padding" Value="3,8,3,8"/>
             <Setter Property="Height" Value="35"/>
-            <Setter Property="FontSize" Value="15px"/>
+            <Setter Property="FontSize" Value="14px"/>
             <Setter Property="FontFamily" Value="Verdana"/>
             <Setter Property="Background" Value="Snow"/>
         </Style>
