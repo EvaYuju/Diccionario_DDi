@@ -67,14 +67,6 @@ namespace Diccionario_DDi
                 {"Negro","Black"},{"Gato","Cat"},{"Perro","Dog"},{"Casa","House"},{"Blanco","White"},
                 {"Naranja","Orange"},{"Flor","Flower"},{"Ventana","Window"},{"Ordenador","Computer"},{"Verde","Green"}
             };
-            palabrasIngles_Espanol = new Dictionary<string, string>();
-            foreach(var clave in palabrasEspanol_Ingles)
-            {
-                if (!palabrasIngles_Espanol.ContainsKey(clave.Value))
-                {
-                    palabrasIngles_Espanol.Add(clave.Value, clave.Key);
-                }
-            }
         }
 
         private void crearDiccionarioIngles_Espanol()
